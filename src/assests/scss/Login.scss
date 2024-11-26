@@ -1,0 +1,86 @@
+// .homepage-container {
+//   .banner-right-container {
+//     background-color: linear-gradient(to bottom, #113F4A 0%, #d3d7d8 100%);
+ 
+//     /*********** Login Form Container CSS Starts **********/
+//     .login-container {
+//       .loginform-container {
+//         padding: 4vh;
+//         background: var(--bg-white);
+//         border: 0.1vh solid var(--border-g1-light);
+//         border-radius: 0.4vh;
+//         box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+ 
+//         .login-form {
+//           display: flex;
+//           justify-content: center;
+//           align-items: center;
+          
+//           section {
+//             width:41vh;          
+ 
+//             // OR Divider
+//             .orDivider {
+//               .divider {
+//                 display: flex;
+//                 justify-content: center;
+ 
+//                 &:before,
+//                 &:after {
+//                   content: "";
+//                   flex: 1;
+//                 }
+//               }
+ 
+//               .line {
+//                 align-items: center;
+//                 font-size: 1.4vh;
+ 
+//                 &:before,
+//                 &:after {
+//                   height: 0.1vh;
+//                   margin: 0 1em;
+//                 }
+//               }
+ 
+//               .one-line {
+ 
+//                 &:before,
+//                 &:after {
+//                   background: var(--border-g3-light);
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+ 
+//     /*********** Login Form Container CSS Ends **********/
+ 
+//     /*********** SignUp Form Container CSS Starts **********/
+//     .signupform-container {
+//       padding: 4vh;
+//       display: block;
+//       background: var(--bg-white);
+//       border: 0.1vh solid var(--border-g1-light);
+//       border-radius: 0.8vh;
+//       box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+ 
+//       .signup-form {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;     
+//       }
+//     }
+ 
+//     /*********** SignUp Form Container CSS Starts **********/
+//   }
+// }
+
+
+.login-bgImg{
+  background-image: url("../img/Dashboard/bg_solar.png");
+  background-position: right center;
+  background-repeat:no-repeat;  
+}

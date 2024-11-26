@@ -1,0 +1,631 @@
+@import "./Login.scss";
+@import "./Home.scss";
+@import "./Esri.scss";
+@import "./Charts.scss";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-wrap: anywhere;
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+body {
+  font-family: "Roboto" !important;
+  min-height: 800px;
+  overflow: hidden;
+}
+
+:root {
+  /* Background Color */
+  --bg-white: #fff;
+  --bg-black: #000;
+  --bg-primary: #113f4a;
+
+  /* Border Color */
+  --border-primary: #113f4a;
+
+  /* FOnt Color */
+  --txt-black: #000;
+  --txt-white: #fff;
+  --txt-primary: #113f4a;
+
+  /* Icon Color */
+  --icon-white: #fff;
+  --icon-black: #000;
+  --icon-primary: #113f4a;
+}
+
+/************ Loader CSS Start **********/
+.loader {
+	border-top-color: #3498db;
+	-webkit-animation: spinner 1.5s linear infinite;
+	animation: spinner 1.5s linear infinite;
+}
+
+@-webkit-keyframes spinner {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes spinner {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+/************ Loader CSS Ends **********/
+
+/************ List CSS Start **********/
+
+
+.dropdown-toggle::after {
+  content: none !important;
+}
+
+/************ List CSS Ends **********/
+
+/************ All min-height/min-width CSS Starts **********/
+.h0 {
+  min-height: max(0vh) !important;
+  margin: 0vh !important;
+  padding: 0vh !important;
+}
+
+.h1 {
+  min-height: max(1vh) !important;
+  margin: 0vh !important;
+  padding: 0vh !important;
+}
+
+.h2 {
+  min-height: max(2vh) !important;
+  margin: 0vh !important;
+  padding: 0vh !important;
+}
+
+.h3 {
+  min-height: max(3vh) !important;
+  margin: 0vh !important;
+  padding: 0vh !important;
+}
+
+.h4 {
+  min-height: max(4vh) !important;
+  margin: 0vh !important;
+  padding: 0vh !important;
+}
+
+.h5 {
+  min-height: max(5vh) !important;
+  margin: 0vh !important;
+  padding: 0vh !important;
+}
+
+.h6 {
+  min-height: max(6vh) !important;
+  margin: 0vh !important;
+  padding: 0vh !important;
+}
+
+/************ All min-height/min-width CSS Ends **********/
+
+/************ Floating Label CSS Starts **********/
+input:focus~label,
+input:not(:placeholder-shown)~label,
+textarea:focus~label,
+textarea:not(:placeholder-shown)~label,
+select:focus~label,
+select:not([value=""]):valid~label {
+  // font-size: 1.4vh;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-translate-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: -2.4vh;
+  transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+// input:focus~label,
+// select:focus~label {
+//     --tw-text-opacity: 1;
+//     color: rgba(0, 0, 0, var(--tw-text-opacity));
+// }
+
+/************ Floating Label CSS Ends **********/
+
+/************ Custom ScrollBar CSS Starts **********/
+.custom-scrollbar-css::-webkit-scrollbar {
+  width: 0.4vh;
+  height: 0.4vh;
+}
+
+.custom-scrollbar-css::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.custom-scrollbar-css::-webkit-scrollbar-thumb {
+  border-radius: 0.1vh;
+  background-color: transparent;
+  background-image: linear-gradient(to top, #c1c1c1 0, #c1c1c1 100%);
+}
+
+/************ Custom ScrollBar CSS Ends **********/
+
+.on {
+  color: #ff881b;
+}
+
+.off {
+  color: #b7c5c8;
+}
+
+/************ Loader CSS Starts **********/
+
+.circle-one {
+  animation-delay: 0.1s;
+}
+
+.circle-two {
+  animation-delay: 0.2s;
+}
+
+.circle-three {
+  animation-delay: 0.3s;
+}
+
+/************ Loader CSS Ends **********/
+
+/************ SVG Active CSS Starts **********/
+.lc-icon-content-active {
+  background-color: #ffffff;
+  cursor: pointer;
+
+  svg {
+    fill: #0c2d35;
+    scale: (0.95);
+
+    path {
+      fill: #0c2d35;
+    }
+  }
+}
+
+.lc-icon-content:hover {
+  background-color: #ffffff;
+
+  .lc-icon-logout {
+    fill: none !important;
+    stroke: #0c2d35;
+  }
+
+  svg {
+    fill: #0c2d35;
+    scale: (0.95);
+
+    path {
+      fill: #0c2d35;
+    }
+  }
+}
+
+.lc-logout-icon-content:hover {
+  background-color: #ffffff;
+
+  svg {
+    // fill: #0c2d35 !important;
+    // stroke: #0c2d35;
+
+    path {
+      // stroke: #0c2d35;
+      fill: #0c2d35 !important;
+    }
+  }
+}
+
+.mapTool-icon-content:hover {
+  background-color: #113f4a;
+
+  svg {
+    path {
+      fill: #ffffff;
+    }
+  }
+}
+
+.mapTool-icon-content-active {
+  background-color: #113f4a;
+
+  svg {
+    path {
+      fill: #ffffff;
+    }
+  }
+}
+
+.roof-content-icons:hover {
+  // background-color: #113f4a;
+
+  svg {
+    path {
+      fill: #113f4a;
+      fill-opacity: 1
+    }
+  }
+}
+
+.roof-content-icons-active {
+  // background-color: #113f4a;
+
+  svg {
+    path {
+      fill: #113f4a;
+      fill-opacity: 1
+    }
+  }
+}
+
+/************ SVG Active CSS Ends **********/
+
+/************ Login CSS Starts **********/
+.PhoneInputInput:focus-visible {
+  outline-color: transparent;
+}
+
+/************ Login CSS Ends **********/
+
+/************ Login CSS Starts **********/
+//  .dinput div{
+//    width:100%;
+// }
+/************ Login CSS Ends **********/
+
+/************GenericSelect CSS Starts **********/
+
+/************GenericSelect CSS Ends **********/
+
+/************EPC card CSS Starts **********/
+.epccard {
+  background-image: url("../img/Dashboard/EPC/bg.png");
+}
+
+/************EPC card CSS Ends **********/
+
+.GenericTableIcons-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.GenericTableIcons {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.GenericTableIcons>span {
+  color: #28525c;
+  line-height: 12px;
+  font-size: 1vh;
+}
+
+.GenericTableIcons:hover {
+  scale: 105%;
+
+  span {
+    color: #113F4A !important;
+  }
+
+  svg {
+    path {
+      fill: #113F4A;
+    }
+  }
+}
+
+.modal-backdrop {
+  background-color: rgba(212, 220, 222, .6) !important;
+}
+
+.roofAnalysis .input-box {
+  width: 32vh;
+}
+
+.inputField .input-box {
+  margin: 5px;
+}
+
+.customerAddress .input-box {
+  margin: 5px;
+}
+
+/* Tooltip CSS Starts */
+/* You can use [data-title] selector as well */
+// [title] {
+//   outline: red dotted 1px; 
+//   font-size: 30px;
+//   position: relative;
+//   cursor: help;
+// }
+
+// [title]:hover::before {
+//   content: attr(title);
+//   position: absolute;
+//   bottom: -26px;
+//   display: inline-block;
+//   padding: 3px 6px;
+//   border-radius: 2px;
+//   background: #000;
+//   color: #fff;
+//   font-size: 12px;
+//   font-family: sans-serif;
+//   white-space: nowrap;
+// }
+// [title]:hover::after {
+//   content: '';
+//   position: absolute;
+//   bottom: -10px;
+//   left: 8px;
+//   display: inline-block;
+//   color: #fff;
+//   border: 8px solid transparent;	
+//   border-bottom: 8px solid #000;
+// }
+/* Tooltip CSS Ends */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.lgx-modal {
+  width: 100%;
+  max-width: 86rem;
+  /* min-width: fit-content */
+}
+
+.abs {
+  .css-9d2b8h-Control>div:first-child {
+    width: 1vh !important;
+  }
+}
+
+
+/************Query CSS Starts **********/
+// @media (max-width: 1271px) {
+//   .mapBtn { display: none; }
+//   .wrrapingDiv{margin-right:2vh;}
+// }
+// @media (max-width: 1000px) {
+//   .mapBtn { display: none; }
+//   .wrrapingDiv{flex-direction: column; padding: auto; margin-right:2.6vh;}
+// }
+// @media (max-width: 600px) {
+//   .mapBtn { display: none; }
+//   .wrrapingDiv{flex-direction: column; padding: auto;margin-top:5vh;}
+// }
+/************Query CSS Ends **********/
+
+/************BtnHoverDisabled CSS Starts **********/
+
+
+
+/************BtnHoverDisabled CSS Ends **********/
+
+
+.infraDesignTable {
+  width: 100% !important;
+}
+
+.infraDesignTable td,
+.infraDesignTable td select {
+  // padding-left: inherit !important;
+  // padding-right: inherit !important;
+  width: 100% !important;
+  padding-left: 5px
+}
+
+.infraDesignTable td input {
+  width: 100% !important;
+  // padding-left: 10px !important;
+}
+
+.infraDesignTable tr td {
+  // padding-left: 5px !important;
+}
+
+
+//react select css starts 
+.css-1xc3v61-indicatorContainer,
+.css-15lsz6c-indicatorContainer {
+  padding-left: 0vh !important;
+  padding-right: 0vh !important;
+}
+
+.css-1n6sfyn-MenuList::-webkit-scrollbar {
+  width: 0.4vh;
+  height: 0.4vh;
+}
+
+.css-1n6sfyn-MenuList::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.css-1n6sfyn-MenuList::-webkit-scrollbar-thumb {
+  border-radius: 0.1vh;
+  background-color: transparent;
+  background-image: linear-gradient(to top, #c1c1c1 0, #c1c1c1 100%);
+}
+
+// .css-10wo9uf-option{
+//   padding: 8px 2px !important;
+// }
+
+//react select css ends 
+
+.react-international-phone-input-container .react-international-phone-input {
+  background-color: #fdfbfb !important;
+  font-weight: 600 !important;
+  color:#191919da !important;
+}
+
+.react-international-phone-input-container .react-international-phone-input--disabled {
+  background-color: #f3f4f6 !important;
+  width: 100% !important;
+  opacity: 80%;
+}
+
+.react-international-phone-country-selector-button--disabled {
+  background-color: #fff !important;
+}
+
+
+._W8gbA.xsZxtw {
+  opacity: 0 !important;
+}
+//phoneInput
+.signupmobile>input {
+  width: 100%;
+  height: 2.5rem !important;
+  border-top-right-radius: 0.375rem !important;
+  border-bottom-right-radius: 0.375rem !important;
+  border-width: 1px !important;
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity)) !important;
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity)) !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  // font-weight: 100 !important;
+  outline: 2px solid transparent !important;
+  outline-offset: 2px !important;
+  --tw-drop-shadow: drop-shadow(0 1px 1px rgb(0 0 0 / 0.05)) !important;
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important;
+  transition-property: all !important;
+  transition-duration: 200ms !important;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.signupmobile>input:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+  --tw-ring-color: rgb(6 159 177 / 0.4);
+  --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.signupmobile .react-international-phone-country-selector>button {
+  // padding: 10px 12px;
+  width: 100%;
+  height: 2.5rem !important;
+  border-top-left-radius: 0.375rem !important;
+  border-bottom-left-radius: 0.375rem !important;
+  border-width: 1px !important;
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity)) !important;
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity)) !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  font-weight: 100 !important;
+  outline: 2px solid transparent !important;
+  outline-offset: 2px !important;
+  --tw-drop-shadow: drop-shadow(0 1px 1px rgb(0 0 0 / 0.05)) !important;
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important;
+  transition-property: all !important;
+  transition-duration: 200ms !important;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.signupmobile.error>div>button,
+.signupmobile.error>input {
+  border: 1px solid rgb(251 113 133);
+}
+
+.drawer-body {
+  position: absolute;
+  height: 88vh;
+  width: 45vh;
+  background: white;
+  z-index: 100;
+  left: 8vh;
+  top: 1.5vh;
+}
+
+
+#draweContainer::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+
+/* AllComponents.scss */
+
+
+
+//transition 
+.fade-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+//transition 
+
+.esri-view-surface>canvas::after{
+  border: none !important;
+  outline: none !important;
+  border: 2px solid red !important;
+}
+.esri-view {
+  --esri-view-outline-color:none;
+  --esri-view-outline: none;
+}
+
+//for hiding tailwind view icon in input
+input[type=password]::-ms-reveal,
+input[type=password]::-ms-clear
+{
+display: none;
+}

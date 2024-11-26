@@ -1,0 +1,572 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components{
+
+/**** Global Scrollbar CSS Starts ****/
+/* Width */
+::-webkit-scrollbar {
+  @apply w-1.5
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 rounded-sm
+}
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-300
+} */
+
+/**** Global Scrollbar CSS Endss ****/
+  
+  /**** Global Heading Paragraph CSS Starts ****/
+  .heading{
+    @apply mb-2 md:mb-4
+  }
+  .heading-sm{
+    @apply font-medium sm:text-xl
+  }
+  .heading-md{
+    @apply font-medium sm:text-2xl
+  }
+  .heading-lg{
+    @apply font-medium sm:text-3xl
+  }
+
+   /* Heading Light */
+  .heading-sm-light{
+    @apply font-light sm:text-xl
+  }
+  .heading-md-light{
+    @apply font-light sm:text-2xl
+  }
+  .heading-lg-light{
+    @apply font-light sm:text-3xl
+  }
+  
+  /* Heading Semi-Bold */
+  .heading-sm-semibold{
+    @apply font-semibold sm:text-xl
+  }
+  .heading-md-semibold{
+    @apply font-semibold sm:text-2xl
+  }
+  .heading-lg-semibold{
+    @apply font-semibold sm:text-3xl
+  }
+
+  /* Heading Bold */
+  .heading-sm-bold{
+    @apply font-bold sm:text-xl
+  }
+  .heading-md-bold{
+    @apply font-bold sm:text-2xl
+  }
+  .heading-lg-bold{
+    @apply font-bold sm:text-3xl
+  }
+
+  .para{
+    @apply mb-2 md:mb-4
+  }
+  
+  .para-xs{
+    @apply font-medium sm:text-xs
+  }
+  .para-sm{
+    @apply font-medium sm:text-sm
+  }
+  .para-md{
+    @apply font-medium sm:text-base
+  }
+  .para-lg{
+    @apply font-medium sm:text-lg
+  }
+
+  /* Para Light */
+  .para.sm-light{
+    @apply font-light sm:text-sm
+  }
+  
+  /* Para Semi-Bold */
+  .para-xs-semibold{
+    @apply font-semibold sm:text-xs
+  }
+  .para-sm-semibold{
+    @apply font-semibold sm:text-sm
+  }
+  .para-md-semibold{
+    @apply font-semibold sm:text-base
+  }
+  .para-lg-semibold{
+    @apply font-semibold sm:text-lg
+  }
+
+  .blockquote1{
+    @apply mb-6 border-l-4 border-custom-primary-default pl-4 italic text-gray-500 sm:text-lg md:mb-8 md:pl-6
+  }
+  /**** Global Heading Paragraph CSS Ends ****/
+
+  /**** Global Image CSS Starts ****/
+  .main-img1{
+    @apply relative mb-6 overflow-hidden rounded-lg bg-gray-100 shadow-lg md:mb-8
+  }
+  .img-box1{
+    @apply h-full w-full object-cover object-center transition duration-200 group-hover:scale-110
+  }
+  /**** Global Image CSS Ends ****/
+
+  /**** Global List CSS Starts ****/
+  .ul1{
+    @apply mb-4 list-inside list-disc marker:text-custom-primary-default marker:text-base marker:mr-1 hover:marker:text-custom-primary-dark md:mb-6
+  }
+  .li1{
+    @apply para-sm text-gray-700
+  }
+  /**** Global List CSS Ends ****/
+  
+  /**** Global Button CSS Starts ****/
+  .btn{
+    @apply rounded-md font-sans font-medium uppercase shadow-md shadow-custom-primary-default/20 transition-all cursor-pointer hover:shadow-lg hover:shadow-custom-primary-default/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:shadow-none disabled:cursor-not-allowed disabled:opacity-50
+  }
+
+  .btn-icon{
+    @apply text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-500
+  }
+
+  /* Disable Button */
+  .btn-disable{
+    @apply rounded-md font-sans font-semibold uppercase transition-all opacity-50 cursor-not-allowed disabled:shadow-none disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  /* Screen Button */
+  .btn-main{
+    @apply w-full grid grid-cols-4 gap-4
+  }
+  
+  /* Link Button */
+  .btn-link{
+      @apply underline text-sm text-custom-primary-default/80 hover:text-custom-primary-default rounded-md font-sans font-medium uppercase transition-all cursor-pointer focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:shadow-none disabled:cursor-not-allowed disabled:opacity-50
+  }
+
+  /* Primary Button */
+  .btn-xs-primary{
+    @apply bg-gradient-to-tr from-custom-primary-dark to-custom-primary-default/80 border border-custom-primary-dark py-1.5 px-2 text-xs text-white hover:bg-custom-primary-default
+  }
+  .btn-sm-primary{
+    @apply bg-gradient-to-tr from-custom-primary-dark to-custom-primary-default/80 border border-custom-primary-dark py-2 px-4 text-sm text-white hover:bg-custom-primary-default
+  }
+  .btn-md-primary{
+    @apply bg-gradient-to-tr from-custom-primary-dark to-custom-primary-default/80 border border-custom-primary-dark py-3 px-6 text-base text-white hover:bg-custom-primary-default
+  }
+  .btn-lg-primary{
+    @apply bg-gradient-to-tr from-custom-primary-dark to-custom-primary-default/80 border border-custom-primary-dark py-3.5 px-7 text-lg text-white hover:bg-custom-primary-default
+  }
+
+  /* Outline Button */
+  .btn-xs-outline{
+    @apply bg-white py-1 px-2 border text-xs hover:bg-gradient-to-tr from-custom-primary-dark to-custom-primary-default/80 hover:text-white
+  }
+  .btn-xs-outlineprimary{
+    @apply bg-white py-1 px-2 border border-custom-primary-dark text-xs text-custom-primary-dark hover:bg-gradient-to-tr from-custom-primary-dark to-custom-primary-default/80 hover:text-white
+  }
+  .btn-sm-outlineprimary{
+    @apply bg-white py-2 px-4 border border-custom-primary-dark text-sm text-custom-primary-dark hover:bg-gradient-to-tr from-custom-primary-dark to-custom-primary-default/80 hover:text-white
+  }
+  .btn-md-outlineprimary{
+    @apply bg-white py-3 px-6 border border-custom-primary-dark text-base text-custom-primary-dark hover:bg-gradient-to-tr from-custom-primary-dark to-custom-primary-default/80 hover:text-white
+  }
+  .btn-lg-outlineprimary{
+    @apply bg-white py-3.5 px-7 border border-custom-primary-dark text-lg text-custom-primary-dark hover:bg-gradient-to-tr from-custom-primary-dark to-custom-primary-default/80 hover:text-white
+  }
+  /**** Global Button CSS Ends ****/
+
+  /**** Global Inputs CSS Starts ****/
+  .main-box1{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+   /* @apply relative w-64 md:w-64 lg:w-full px-2 pt-4 pb-2; */
+   @apply relative w-full px-2 pt-4 pb-2;
+  }
+  .label-box1{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+   @apply block w-full pb-1 para-xs text-gray-800 transition-all duration-200 ease-in-out group-focus-within:text-custom-primary-default capitalize;
+  }
+  .input-box1{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+   @apply h-10 w-full border border-gray-300 rounded-md bg-gray-50 px-4 para-sm outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-1 focus:ring-custom-primary-default/40 focus:drop-shadow-md;
+  }
+  .input-main1{
+    @apply relative flex items-center;
+  }
+
+  /* Success & Error Input */
+  .label-success{
+    @apply text-emerald-500 group-focus-within:text-emerald-500
+  }
+  .input-success{
+    @apply border-emerald-500 ring-emerald-500 focus:border-emerald-500 focus:ring-emerald-500
+  }
+  .label-error{
+    @apply text-rose-400 group-focus-within:text-rose-400
+  }
+  .input-error{
+    @apply text-rose-400 border-rose-400 ring-rose-400  focus:border-rose-400 focus:ring-rose-400
+  }
+  .input-disabled{
+    @apply bg-black cursor-not-allowed
+  }
+  
+  /* Helper Input */
+  .helper-box1{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+   @apply absolute block pt-1 text-xs font-medium text-gray-500 opacity-0 transition-all duration-200 ease-in-out group-focus-within:opacity-100;
+  }
+
+  /* Sufix & Prefix Input */
+  .pre-box1{
+    @apply absolute left-1 para-sm transition-all duration-200 ease-in-out;
+  }
+  .pre-input1{
+    @apply relative pl-11 pr-6
+  }
+  .suf-box1{
+    @apply absolute right-1 para-sm transition-all duration-200 ease-in-out 
+  }
+  .suf-input1{
+    @apply relative pl-6 pr-11
+  }
+  .presuf-input1{
+    @apply relative pl-11 pr-11
+  }
+
+  /* Upload Input */
+  .upload-input1{
+    @apply flex h-10 w-full border border-gray-300 rounded-md bg-gray-50 px-4 py-2 text-sm text-gray-400 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out file:border-0 file:bg-transparent file:text-gray-600 file:text-sm file:font-medium focus:bg-white focus:ring-1 focus:ring-custom-primary-default/40 focus:drop-shadow-md
+  }
+
+  /* Radio Input */
+  .main-box2{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+   @apply flex flex-col w-72 md:w-80 lg:w-96 p-2;
+  }
+  .label-box2{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+   @apply relative flex items-center text-sm font-medium text-gray-500 transition-all duration-200 ease-in-out group-focus-within:text-custom-primary-default cursor-pointer;
+  }
+  .label-box3{
+  @apply ml-1 text-sm font-medium text-gray-400 transition-all duration-200 ease-in-out peer-checked:text-custom-primary-default cursor-pointer;
+  }
+  .input-main2{
+    @apply relative flex flex-row justify-start py-2 gap-4;
+  }
+  /* .input-main2{
+    @apply relative flex flex-row justify-start w-72 max-w-80 md:w-80 lg:w-80 py-2 gap-4;
+  } */
+  .radio-input1{
+    @apply border-gray-400 accent-custom-primary-default hover:accent-custom-primary-default h-4 w-4 transition duration-300 ease-in-out;
+  }
+
+  /* Checkbox Input */
+  .radio-input2{
+    @apply border-gray-400 accent-custom-primary-default hover:accent-custom-primary-default h-4 w-4 transition duration-300 ease-in-out;
+  }
+
+  /* Toggle Input */
+  .label-box5{
+  @apply relative inline-flex items-center cursor-pointer
+  }
+  .main-toggle1{
+    @apply ring-0 bg-rose-400 rounded-full outline-none duration-300 after:duration-300 w-12 h-6 shadow-md peer-checked:bg-emerald-500 peer-focus:outline-none after:content-['✖️'] after:text-xs after:rounded-full after:absolute after:bg-gray-50 after:outline-none after:h-5 after:w-5 after:top-0.5 after:left-0.5 after:-rotate-180 after:flex after:justify-center after:items-center peer-checked:after:translate-x-6 peer-checked:after:content-['✔️'] peer-hover:after:scale-95 peer-checked:after:rotate-0
+  }
+  .main-toggle2{
+    @apply ring-0 bg-rose-400  rounded-full outline-none duration-300 after:duration-500 w-12 h-12  shadow-md peer-checked:bg-emerald-500  peer-focus:outline-none  after:content-['✖️'] after:rounded-full after:absolute after:outline-none after:h-10 after:w-10 after:bg-gray-50 after:top-1 after:left-1 after:flex after:justify-center after:items-center  peer-hover:after:scale-75 peer-checked:after:content-['✔️'] after:-rotate-180 peer-checked:after:rotate-0
+  }
+  /**** Global Inputs CSS Ends ****/
+
+   /**** Global Modal CSS Starts ****/
+   .label-box4{
+    @apply relative flex items-center w-fit text-sm font-medium text-gray-500 transition-all duration-200 ease-in-out group-focus-within:text-custom-primary-default cursor-pointer;
+   }
+   /* Tooltip Modal */
+   .main-tt1{
+      @apply relative bg-gray-200 w-4 h-4 px-0.5 rounded-md hover:bg-gray-300 active:bg-gray-300
+   }
+   .tt-icon1{
+      @apply flex justify-center items-center text-gray-800 text-xs
+   }
+   .tt-modal1{
+      @apply bg-gray-200 p-2 rounded-md group-hover:flex hidden absolute -top-2 -translate-y-full left-1/2 -translate-x-1/2
+   }
+   .tt-arrow1{
+      @apply bg-inherit rotate-45 p-1 absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2
+   }
+   .tt-modal2{
+      @apply bg-gray-200 p-2 rounded-md group-hover:flex hidden absolute top-1/2 -translate-y-1/2 -right-2 translate-x-full
+   }
+   .tt-arrow2{
+      @apply bg-inherit rotate-45 p-1 absolute top-1/2 -translate-y-1/2 left-0 -translate-x-1/2
+   }
+   .tt-modal3{
+      @apply bg-gray-200 p-2 rounded-md group-hover:flex hidden absolute top-1/2 -translate-y-1/2 -left-2 translate-x-full
+   }
+   .tt-arrow3{
+      @apply bg-inherit rotate-45 p-1 absolute top-1/2 -translate-y-1/2 -right-2 -translate-x-1/2
+   }
+   .tt-body1{
+      @apply text-gray-800 text-sm font-thin w-72 md:w-80 lg:w-96 p-2
+   }
+   .tt-link1{
+      @apply text-gray-800 text-sm font-thin underline hover:cursor-pointer hover:text-gray-900
+   }
+   /**** Global Tooltip CSS Ends ****/
+
+   /**** Global Modal CSS Starts ****/
+   .main-modal1{
+    @apply relative flex flex-wrap bg-white px-4 py-2 shadow-md sm:flex-nowrap sm:items-center sm:justify-center sm:gap-3 sm:pr-8 md:px-8
+   }
+   .modal-body1{
+    @apply order-1 mb-2 inline-block w-11/12 max-w-screen-sm text-sm text-gray-500 sm:order-none sm:mb-0 sm:w-auto md:text-base
+   }
+   .modal-btn1{
+    @apply order-last inline-block w-full sm:order-none sm:w-auto
+   }
+   .modal-close1{
+    @apply order-2 flex w-1/12 items-start justify-end sm:absolute sm:right-0 sm:order-none sm:mr-1 sm:w-auto xl:mr-3
+   }
+
+   /* Modal with Backdrop and No Backdrop */
+   .modal-nobackdrop1{
+    @apply absolute top-16 md:left-[30%] lg:left-[40%] sm:left-[18%] mt-1 mx-auto flex flex-wrap justify-center w-fit h-fit z-10 before:fixed before:inset-0 before:w-full before:h-fit
+   }
+   .modal-backdrop1{
+    @apply fixed inset-0 p-4 flex flex-wrap justify-center items-center w-full h-full z-50 before:fixed before:inset-0 before:w-full before:h-full before:bg-[rgba(0,0,0,0.5)]
+   }
+   .main-modal2{
+    @apply relative bg-white shadow-md rounded-md p-6 
+   }
+   .main-modal3{
+    @apply relative bg-white shadow-md rounded-md p-4
+   }
+   .modal-header1{
+    @apply flex items-center pb-4 border-b border-gray-300
+   }
+   .modal-body2{
+    @apply w-full h-fit max-w-screen-2xl max-h-[40rem] py-6 overflow-auto
+   }
+   .modal-footer1{
+    @apply border-t border-gray-300 pt-4 flex justify-end gap-4
+   }
+   .modal-btn2{
+    @apply order-last inline-block w-full sm:order-none sm:w-auto
+   }
+   .modal-close2{
+    @apply order-2 flex w-1/12 items-start justify-end sm:absolute sm:right-0 sm:order-none sm:mr-1 sm:w-auto xl:mr-3
+   }
+   /**** Global Modal CSS Ends ****/
+
+   /**** Global Tabs CSS Starts ****/
+   .tab-active{
+    @apply shrink-0 rounded-t-lg border border-gray-300 border-b-white p-3 para-md text-gray-900
+   }
+   .tab-inactive{
+    @apply shrink-0 border border-transparent p-3 para-md text-gray-400 hover:text-gray-700
+   }
+  .tabs-inactivebody {
+    @apply mt-2 hidden
+  }
+  .tabs-activebody {
+    @apply block p-2 para-md
+  }
+   /**** Global Tabs CSS Ends ****/
+
+   /**** Global Table CSS Starts ****/
+   .table-main1{
+    @apply w-[95%] mx-2 bg-transparent table-fixed /* divide-y divide-gray-300/60 */
+   }
+   .table-caption1{
+    @apply caption-top para-sm p-2 italic
+   }
+   .table-head1{
+    @apply text-left rounded-md /* border border-gray-300/60  */
+   }
+   .table-headth1{
+    @apply sticky inset-y-0 start-0 px-[4px] py-2 para-sm-semibold text-gray-800
+   }
+   /* .table-body1{
+    @apply divide-y divide-gray-300/60 rounded-md border border-gray-300/60
+   } */
+   .table-bodytr1{
+    @apply rounded-md /* divide-y divide-gray-300/60 border border-gray-300/60 */
+   }
+   .table-bodytd1{
+    @apply px-2 py-1 para-sm text-gray-800 min-w-[7vh]
+   }
+   /**** Global Table CSS Ends ****/
+
+   /**** Global Accordion CSS Starts ****/
+   .acc-details1{
+    @apply border-s-8 border-custom-primary-default/80 bg-gray-50 px-1 py-2 [&_summary::-webkit-details-marker]:hidden
+   }
+   .acc-summary1{
+    @apply flex cursor-pointer items-center justify-between px-1 gap-1.5
+   }
+   .acc-icon1{
+    @apply shrink-0 rounded-full bg-white p-1 text-gray-900
+   }
+   .acc-iconsvg1{
+    @apply size-5 shrink-0 transition duration-300 group-open:-rotate-45
+   }
+   .acc-body1{
+    @apply mt-8 /* para-sm text-gray-700 */;
+   }
+
+   /* Small Accordion */
+   .acc-details2{
+    @apply border-s-4 border-custom-primary-default/80 bg-gray-50 px-0.5 py-1 [&_summary::-webkit-details-marker]:hidden
+   }
+   .acc-summary2{
+    @apply flex cursor-pointer items-center justify-between px-2 gap-1
+   }
+   .acc-icon2{
+    @apply shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-2
+   }
+   .acc-iconsvg2{
+    @apply size-3 shrink-0 transition duration-300 group-open:-rotate-45
+   }
+   /**** Global Accordion CSS Ends ****/
+
+   /**** Global Layout CSS Starts ****/
+
+   /* MostlyUsed CSS */
+  .flex-center{
+    @apply flex justify-center items-center;
+  }
+  .flex-start{
+    @apply flex justify-start items-center gap-4;
+  }
+  .flex-between{
+    @apply flex justify-between items-center;
+  }
+
+  /* Section */
+  .main-section1{
+    @apply bg-white mx-2 my-3 p-2 w-[96%] rounded-md border border-gray-300
+  }
+  .main-section2{
+    @apply bg-white mx-1 my-5 p-2 w-full rounded-md border border-gray-300
+  }
+
+  /* LSB Drawer */
+  .lsb-drawer{
+  @apply flex flex-col relative w-[42vh] h-[91.1vh] bg-white z-10
+  }
+  .lsb-body{
+  @apply flex-grow order-first overflow-auto
+  }
+  .lsb-footer{
+  @apply order-last sticky bottom-0 w-full h-[7vh] p-2 bg-white
+  }
+
+  /* RSB Drawer */
+  .rsb-drawer{
+  @apply flex flex-col relative w-[42vh] h-[91.1vh] bg-white z-50
+  }
+  .rsb-body{
+  @apply flex-grow order-first overflow-auto
+  }
+  .rsb-footer{
+  @apply order-last sticky bottom-0 w-full h-[7vh] p-2 bg-white
+  }
+  /**** Global Layout CSS Ends ****/
+
+  /**** Global Icon CSS Starts ****/
+  .lsb-icon{
+    @apply size-8 fill-slate-200 hover:fill-white transition-all duration-200
+  }
+  .lsb-icon:active{
+    @apply bg-white active:fill-neutral-700
+  }
+  .rsb-icon{
+    @apply size-6 fill-gray-700 hover:fill-gray-900 transition-all duration-200
+  }
+  .table-icon{
+    @apply w-5 h-5 fill-custom-primary-default hover:fill-custom-primary-dark transition-all duration-200
+  }
+  .tab-icon{
+    @apply w-6 h-6 mb-2 transition-all duration-200
+  }
+  .btn-icon{
+    @apply w-6 h-6  fill-slate-200 hover:fill-white transition-all duration-200
+  }
+  .btn-iconactive{
+    @apply bg-white active:fill-neutral-700
+  }
+  /**** Global Icon CSS Ends ****/
+    
+}
+
+
+
+/*****select styles****/
+
+
+.option-body{
+  background-color:white;
+  margin-top:5px;
+  box-shadow: 0px 0px 10px 8px rgba(221, 224, 226, 0.8);;
+}
+
+.option-list{
+  padding:10px;
+}
+
+.option-list:hover{
+  background-color: #889FA4;
+  color:white;
+}
+
+
+
+.loading.active{
+  display: block;
+}
+.loading{
+  display: none;
+}
+
+
+
+.lsbicons{
+  @apply w-12 h-12 rounded bg-white
+}
+
+
+.lls{
+  svg{
+    fill: #069FB1;
+    background-color: white;
+    border-radius: 4px;
+  }
+}
+.lls:hover{
+  svg{
+    fill: #069FB1;
+    background-color: white;
+    border-radius: 4px;
+  }
+}
+.lg-modal {
+  @apply w-full max-w-2xl;
+}
+
+.lead-mobile-no .react-international-phone-input:focus{
+  width:100% !important;
+  outline: none !important;
+}
+
+.form-control{
+  width:100%;
+  outline: none;
+  border-radius:5px
+}

@@ -1,0 +1,128 @@
+// .home-container {
+//     display: flex;
+//     width: 100vw;
+//     height: 100vh;
+
+//     /************ Action Container CSS Starts ************/
+//     .action-container {
+//         width: 6vh;
+//         height: 100vh;
+//         background: var(--bg-primary);
+//     }
+
+//     /************ Action Container CSS Ends ************/
+
+
+//     /************ Center Container CSS Starts ************/
+
+//     .center-container {
+//         width: calc(100% - 6vh);
+//         height: 100vh;
+//         background: var(--bg-black);
+
+//         .header-container {
+//             height: 7vh;
+//             background: var(--bg-primary);
+//             border-left-width: 0.1vh;
+//             border-color: rgb(231 235 236 / 0.1);
+//         }
+
+.map-container {
+    position: fixed;
+    height: calc(100% - 9vh);
+    width: calc(100% - 2.8vw);
+    background: var(--bg-black);
+
+    .tool-area1 {
+        position: absolute;
+        top: 0.1vh;
+        right: 0.1vh;
+        z-index: 20;
+    }
+
+    .epc-tool-area {
+        position: absolute;
+        top: 0.1vh;
+        right: 0.3vh;
+    }
+
+    .tool-area {
+        position: fixed;
+        top: 45vh;
+        right: 1.2vh;
+    }
+
+    .tool-area2 {
+        position: fixed;
+        top: 20vh;
+        right: 1.2vh;
+    }
+
+    // @media screen and (max-width: 1024px) {
+    //     .tool-area {
+
+    //         right: 5vh;
+    //     }
+    // }
+    // @media screen and (max-width: 768px) {
+    //     .tool-area {
+
+    //         right: 11vw;
+    //     }
+    // }
+}
+
+//         .dashboard-container {
+//             position: fixed;
+//             height: calc(100% - 7vh);
+//             width: calc(100% - 6vh);
+//             background: white;
+//             padding: 2vh 4vh;
+//         }
+
+//         .footer-container {
+//             height: 1.6vh;
+//             width: calc(100% - 3vw);
+//             background-color: #cfd8da;
+//             position: absolute;
+//             bottom: 0;
+//         }
+//     }
+
+//     /************ Center Container CSS Ends ************/
+// }
+
+
+// // serach widget form 
+// .esri-search__form {
+//     &:first-child {
+//         background-color: white !important;
+
+//         input[type="text"] {
+//             border: 0px !important;
+//         }
+//     }
+// }
+
+// .esri-menu__header {
+
+//     display: none;
+
+// }
+
+// .esri-search__sources-button {
+
+//     pointer-events: none;
+
+// }
+
+
+// ////
+// #customButton {
+//     position: absolute;
+//     display: none;
+//   }
+// /// 
+// /// 
+// /// 
+// /// 

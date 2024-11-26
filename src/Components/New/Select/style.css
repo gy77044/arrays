@@ -1,0 +1,28 @@
+/* styles.css */
+
+.multiselect-dropdown {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+  }
+  .custom-multiselect {
+    width: 20rem;
+  }
+  
+  .searchWrapper::-webkit-scrollbar {
+    width: 0.4vh;
+    height: 0.4vh;
+  }
+  
+  .searchWrapper::-webkit-scrollbar-track {
+    background: #fff;
+  }
+  
+  .searchWrapper::-webkit-scrollbar-thumb {
+    border-radius: 0.1vh;
+    background-color: transparent;
+    background-image: linear-gradient(to top, #c1c1c1 0, #c1c1c1 100%);
+  }
+  .optionListContainer.displayBlock{
+    z-index: 11;
+  }

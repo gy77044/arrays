@@ -1,0 +1,204 @@
+/************ Search CSS Starts **********/
+
+/* Wrapper Div */
+// .esri-search.esri-widget {
+//   width: 40vh !important;
+//   border:0.7vh solid white;
+//   border-bottom-left-radius: 0.4vh;
+//   border-bottom-right-radius: 0.4vh;
+//   border-top-left-radius:0.4vh;
+//   border-top-right-radius: 0.4vh;
+// }
+.searchInHeader.esri-search.esri-widget {
+  width: 24rem !important;
+  border: 0.1vh solid #f3f4f6;
+  border-radius: 4px;
+  padding: 2px;
+  overflow: hidden;
+}
+
+.esri-ui-inner-container.esri-ui-corner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .esri-ui-top-right.esri-ui-corner {
+    top: 0;
+    right: auto;
+  }
+}
+
+.esri-ui-top-right.esri-ui-corner>.esri-compass {
+  top: 45vh;
+  right: 1.2vh !important;
+  position: fixed;
+  width: 3.5vh;
+  height: 3.5vh;
+
+  .esri-widget--button {
+    margin-left: -0.3vh;
+    font-size: 2vh !important;
+    // font-size: 1.4vh !important;
+  }
+}
+
+// @media screen and (min-width: 769px) and (max-width: 1023px) {
+//   .tool-area {
+//     right: 7vh;
+//   }
+// }
+// @media screen and (max-width: 768px) {
+//   .esri-ui-top-right.esri-ui-corner > .esri-compass {  
+//     right: 4.2vh !important;   
+//   }
+//   .tool-area {    
+//     right: 8vh !important;
+//   }
+// }
+
+.esri-search--multiple-sources.esri-search__container {
+
+  /* Arrow Button */
+  .esri-search__sources-button.esri-widget--button {
+    display: none !important;
+  }
+
+  /* Input */
+  .esri-input.esri-search__input {
+    height: 3.2vh;
+    padding: 1vh;
+  }
+
+  /* Input Focus */
+  .esri-input.esri-search__input:focus-visible {
+    outline-width: 0 !important;
+    font-size: 1.6vh !important;
+  }
+}
+
+/************ Search CSS Ends **********/
+
+/************ Zoom Icons CSS Starts **********/
+.esri-ui-top-left.esri-ui-corner {
+  display: none;
+  pointer-events: none;
+}
+
+/************ Zoom Icons CSS Ends **********/
+
+/************ Esri Popup CSS Starts **********/
+// .esri-popup__main-container.esri-widget.esri-popup--is-collapsible {
+//     width: 32vh;
+//     // border: 0.3vh solid #113F4A;
+//     border-radius: 0.5vh;
+//     padding: 1vh;
+// }
+
+// .esri-widget__heading.esri-popup__header-title,
+// .esri-search-result-renderer__more-results-item {
+//     color: #0c2d35;
+// }
+
+// .esri-popup__button.esri-popup__action:hover {
+//     background-color: #0c2d35;
+//     color: #fff;
+// }
+
+// .esri-popup__icon.esri-icon-close:hover {
+//     color: #0c2d35;
+//     font-weight: 800;
+// }
+.esri-component.esri-popup.esri-popup--aligned-top-center.esri-popup--shadow {
+  display: none;
+}
+
+/************ Esri Popup CSS Ends **********/
+
+/************ Footer CSS Starts **********/
+
+.esri-component.esri-attribution.esri-widget {
+  display: none;
+}
+
+/************ Footer CSS Ends **********/
+
+.esri-compass .esri-compass__icon {
+  font-size: 2vh !important;
+}
+
+.esri-view-width-less-than-small .esri-search__input {
+  font-size: 1.6vh !important;
+}
+
+.esri-search__clear-button .esri-widget--button {
+  font-size: 1.6vh !important;
+}
+
+.esri-icon-close {
+  font-size: 1.6vh !important;
+  margin: 0vh;
+  padding: 0vh;
+}
+
+.esri-widget--button {
+  font-size: 1.4vh !important;
+  width: 2.4vh !important;
+  height: 2.4vh !important;
+  padding: 0vh !important;
+  margin: 0vh !important;
+}
+
+.esri-widget--button:hover {
+  background-color: #fff !important;
+}
+
+.esri-widget--button:active {
+  background-color: #fff !important;
+}
+.sidebar .esri-widget{
+  background-color: transparent;
+}
+
+.esri-icon-search {
+  font-size: 1.6vh !important;
+}
+
+.esri-menu {
+  position: fixed !important;
+  top: 4rem !important;
+  left: 13rem !important;
+  max-width: 24rem !important;
+}
+
+.esri-menu__list-item {
+  font-size: 1.6vh !important;
+}
+
+.esri-icon-locate-circled {
+  font-size: 1.6vh !important;
+}
+
+// .esri-search__suggestions-menu,
+// .esri-search__suggestions-menu{
+//     max-width: 30vh;
+// }
+
+.esri-search__submit-button {
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: solid 0vh rgba(110, 110, 110, .3) !important;
+  // border:none;
+}
+
+// shadow casting 
+.esri-shadow-cast {
+  // position: fixed!important;
+  // right: 2%!important;
+}
+
+
+
+#searchDiv-suggest-menu {
+  z-index: 9999999 !important;
+}

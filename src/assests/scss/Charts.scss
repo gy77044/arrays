@@ -1,0 +1,64 @@
+.profile-chart {
+    canvas {
+        width: 55vh !important;
+    }
+}
+ 
+.loss-chart {
+    canvas {
+        width: 128vh !important;
+        height: 32vh !important;
+    }
+}
+ 
+.energy-chart {
+    canvas {
+        width: 128vh !important;
+        height: 32vh !important;
+    }
+}
+ 
+ 
+.heatmap {
+    .heatmap-chart {
+        /* margin-top: -5vh !important; */
+        width: 70vh;
+        overflow: hidden;
+        height: 46vh;
+ 
+        div[title] {
+            width: 47px !important;
+            height: 14px !important;
+            margin: 0.2vh !important;
+        }
+    }
+ 
+}
+ 
+.module-chart {
+    canvas {
+        width: 70vh !important;
+        height: 56vh !important;
+    }
+}
+ 
+.inverter-chart {
+    canvas {
+        width: 70vh !important;
+        height: 48vh !important;
+    }
+}
+ 
+.time-chart {
+    canvas {
+        width: 130vh !important;
+        height: 32vh !important;
+    }
+}
+ 
+/* .loss-chart {
+    canvas {
+        width: 130vh !important;
+        height: 35vh !important;
+    }
+} */
